@@ -1,0 +1,123 @@
+body {
+    background-image: url("/images/islands_birdseye.jpg");
+    background:  #f0f0f5;
+    color: #555;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Open Sans',Arial,sans-serif;
+
+/*Headings*/
+}
+h1 {
+	 font-size: 200px;
+	 padding: 50px;
+	 padding-top: 180px;
+	 text-align:center;
+	}
+
+h2 {
+	 font-size: 50px;
+	 padding: 50px;
+}
+
+h3 {
+	padding-top: 1200px;
+	font-weight: normal;
+	color: #555;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Open Sans',Arial,sans-serif;
+}
+
+/* 
+ul {
+    list-style: none;
+    text-align: right;
+    font-size: 50px;
+    padding-top: 30px;
+ }
+*/
+
+/*Navigation Bar*/
+ .nav ul {
+  list-style: none;
+  background-color: #f0f0f5;
+  text-align: right;
+  margin: 40;
+  height: 120px;
+
+}
+.nav li {
+  font-family: 'Open Sans',Arial,sans-serif;
+  font-size: 50px;
+  line-height: 120px;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #555;
+  display: block;
+  transition: .5s 
+  background-color;
+}
+ 
+.nav a:hover {
+  background-color: #78d1c6;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+}
+
+@media screen and (min-width: 1000px) {
+  .nav li {
+    width: auto;
+    height: 100px;
+    line-height: 100px;
+    font-size: 60px;
+  }
+
+  .nav li {
+    display: inline-block;
+    margin-right: 120px;
+  }
+
+/*Gallery*/
+
+div.gallery {
+    margin: 0px;
+    border: 1px hidden;
+    float: left;
+    width: 1000px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 1000px;
+    height: 1000px;
+}
+
+div.desc {
+    padding: 50px;
+    text-align: center;
+    font-size: 30px; 
+    font-style: italic;
+}
+
+/*Paragraphs*/
+
+p{
+	border-style: hidden; 
+	border-width: 300px;
+	padding: 15px;
+	color: #555;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Open Sans',Arial,sans-serif;
+
+}
+
