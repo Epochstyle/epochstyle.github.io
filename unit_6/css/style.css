@@ -1,0 +1,281 @@
+/*Google Fonts Imports*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lora|Raleway');
+
+/*Unit 6 adding asides and floats*/
+
+#two_column {
+    background-color: #FFB7CF;
+    border: 1px black solid;
+    padding: 100px;
+}
+
+#left {
+    background-color: violet;
+    border: 1px black solid;
+    padding: 20px;
+    float: left;
+    width: 30%;
+    height: 900px;
+}
+
+#right {
+    background-color: #E55B88;
+    border: 1px black solid;
+    padding: 20px;
+    float: right;   
+    width: 66%;
+    height: 900px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+}
+
+/* reformatting after unit 6*/
+
+#sunset_boat {
+  width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#about_text {
+  display: inline-block;
+   font-size: 20px;
+
+}
+
+#floating_plastic{
+  width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#plastic_text {
+  display: inline-block;
+   font-size: 20px;
+}
+
+#hamock_girls {
+   width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+body{
+    height: 100%;
+}
+
+/*Unit 5 Visualising Semantics*/
+
+header {
+    background-color: #f0f0f5;
+    border: hidden;
+    padding: 20px;
+}
+
+nav {
+    background-color: #f0f0f5;
+    border: hidden;
+    padding: 20px;
+}
+
+article {
+    background-color: #f0f0f5;
+    width: 100%;
+
+}
+
+footer {
+    background-color: #f0f0f5;
+    border: hidden;
+    padding: 20px;
+}
+
+section {
+    background-color: #f0f0f5;
+
+}
+
+body {
+    background:  #f0f0f5;
+    border: hidden;
+    color: #555;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Open Sans',Arial,sans-serif;
+
+/*Headings*/
+}
+h1 {	 
+   font-family: 'Raleway', sans-serif;
+   font-weight: 500;
+   font-size: 150px;
+	 padding: 50px;
+	 padding-top: 180px;
+	 text-align: center;
+	}
+
+h2 {
+	 font-family: 'Raleway', sans-serif;
+   font-size: 110px;
+	 font-weight: 300;
+   padding: 50px;
+   padding-left: 4em;
+   padding-right: 4em;
+   margin: 2em;
+   position: auto;
+}
+
+#plantearth {
+     font-size: 150px;
+     font-family: 'Lobster', cursive;
+     font-weight: 400;
+
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 400px;
+  padding: 5em;
+}
+
+.logo:hover {
+  size: 100px;
+}
+
+h3 {
+	font-family: 'Raleway', sans-serif
+  padding-top: 1300px;
+	font-weight: normal;
+	color: #555;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Open Sans',Arial,sans-serif;
+}
+
+/*Navigation Bar*/
+ .nav ul {
+  list-style: none;
+  background-color: #f0f0f5;
+  text-align: right;
+  margin: 40;
+  height: 120px;
+
+}
+.nav li {
+  font-family: 'Raleway', sans-serif
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 120px;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #555;
+  display: block;
+  transition: .5s 
+  background-color;
+}
+ 
+.nav a:hover {
+  color: #78d1c6;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+}
+
+header {
+  height: 100vh;
+}
+
+@media screen and (min-width: 1000px) {
+  .nav li {
+    width: auto;
+    height: 100px;
+    line-height: 100px;
+    font-size: 60px;
+  }
+
+  .nav li {
+    display: inline-block;
+    margin-right: 120px;
+  }
+}
+/*Gallery*/
+
+div.gallery {
+    margin: 0px;
+    border: hidden;
+    display: inline-block;
+    width: 1000px;
+}
+
+div.gallery img {
+    width: 1000px;
+    height: 1000px;
+}
+
+div.desc {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    padding: 50px;   
+    font-size: 30px;
+    opacity: 0; 
+    text-align: block;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.desc {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/*Opacity Gallery Hover*/
+
+.gallery:hover .desc{
+  opacity: 1;
+  position: center;
+}
+
+.gallery img:hover {
+  opacity: 0.5;
+}
+
+/*Paragraphs*/
+
+p{
+	
+  display: block;
+  margin: 2.5em;
+  font-family: 'Raleway', sans-serif
+  border-style: hidden; 
+	border-width: 300px;
+	color: #555;
+  text-align: center;
+  font-size: 50px;
+
+}
+
+
+
+

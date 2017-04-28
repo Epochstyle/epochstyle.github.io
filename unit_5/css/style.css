@@ -2,6 +2,17 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Lora|Raleway');
 
+/* Unit 6 column placement*/
+
+aside {
+  float: right;
+   background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+
+
 /*Unit 5 Visualising Semantics*/
 
 header {
@@ -20,7 +31,6 @@ article {
     background-color: #E89C6C;
     border: 1px black solid;
     padding: 20px;
-
 }
 
 footer {
@@ -41,6 +51,8 @@ body {
     text-align: center;
     font-size: 22px;
     font-family: 'Open Sans',Arial,sans-serif;
+
+
 
 /*Headings*/
 }
@@ -75,9 +87,9 @@ h2 {
   position: absolute;
   left: 0;
   top: 0;
-  width: 500px;
-  height: 500px;
-  padding: 2em;
+  width: 400px;
+  height: 400px;
+  padding: 3em;
 
 
 }
@@ -141,7 +153,7 @@ header {
     display: inline-block;
     margin-right: 120px;
   }
-
+}
 /*Gallery*/
 
 div.gallery {
@@ -151,22 +163,38 @@ div.gallery {
     width: 1000px;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
 div.gallery img {
     width: 1000px;
     height: 1000px;
 }
 
 div.desc {
+    position: relative;
     font-family: 'Raleway', sans-serif;
-    padding: 50px;
-    text-align: center;
-    font-size: 30px; 
+    padding: 50px;   
+    font-size: 30px;
+    opacity: 0; 
+    text-align: block;
+    background-color: #4CAF50;
+    color: white;
+}
 
+.desc {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
 
+/*Opacity Gallery Hover*/
+
+.gallery:hover .desc{
+  opacity: 1;
+  position: center;
+}
+
+.gallery img:hover {
+  opacity: 0.5;
 }
 
 /*Paragraphs*/
@@ -183,5 +211,7 @@ p{
   font-size: 50px;
 
 }
+
+
 
 
