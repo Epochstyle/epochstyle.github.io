@@ -38,40 +38,61 @@
 
 /* reformatting after unit 6*/
 
-#sunset_boat {
-  width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+/*About picture and content*/
+p{
+  display: block;
+  margin: 2.5em;
+  font-family: 'Raleway', sans-serif
+  border-style: hidden; 
+  border-width: 400px;
+  color: #000;
+  text-align: center;
+  font-size: 60px;
+
+}
+
+.about_photo {
+  background-image: url(../images/boat_bow.jpg);
+  background-size: cover;
+  height: 1200px;
+  opacity: 0.7;
 }
 
 #about_text {
   display: inline-block;
-   font-size: 20px;
+  background-color: transparent;
 
 }
 
-#floating_plastic{
-  width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+/*Floating plastic Image and Content */
+
+.floating_plastic {
+  background-image: url(../images/plastic_in_water.jpg);
+  background-size: cover;
+  height: 1200px;
+
 }
 
 #plastic_text {
   display: inline-block;
-   font-size: 20px;
+   background-color: transparent;
 }
 
-#hamock_girls {
-   width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+
+/*Be Invovled Picture and Content*/
+
+.be_involved{
+  background-image: url(../images/hamockgirls.jpg);
+  background-size: cover;
+  height: 1200px;
 }
+
+#be_invovled{
+  display: inline-block;
+   background-color: transparent;
+}
+
+
 
 body{
     height: 100%;
@@ -92,8 +113,8 @@ nav {
 }
 
 article {
-    background-color: #f0f0f5;
-    width: 100%;
+    background-color: transparent;
+    padding: 30px; 
 
 }
 
@@ -225,6 +246,7 @@ div.gallery {
     border: hidden;
     display: inline-block;
     width: 1000px;
+    position: relative;
 }
 
 div.gallery img {
@@ -233,21 +255,28 @@ div.gallery img {
 }
 
 div.desc {
-    position: relative;
+    
+    position: absolute;
     font-family: 'Raleway', sans-serif;
     padding: 50px;   
-    font-size: 30px;
+    font-size: 100px;
+    font-weight: 900px;
     opacity: 0; 
     text-align: block;
-    background-color: #4CAF50;
-    color: white;
+    background-color: transparent;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
 }
 
 .desc {
-  background-color: #4CAF50;
+  background-color: #4b4f4e;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+  position: absolute;
 }
 
 /*Opacity Gallery Hover*/
@@ -255,26 +284,20 @@ div.desc {
 .gallery:hover .desc{
   opacity: 1;
   position: center;
+  transition-duration: 0.5s; 
+  transition-property: all;
+
 }
 
 .gallery img:hover {
-  opacity: 0.5;
+  opacity: 0.6;
+  transition-duration: 0.5s; 
 }
 
 /*Paragraphs*/
 
-p{
-	
-  display: block;
-  margin: 2.5em;
-  font-family: 'Raleway', sans-serif
-  border-style: hidden; 
-	border-width: 300px;
-	color: #555;
-  text-align: center;
-  font-size: 50px;
 
-}
+
 
 
 
