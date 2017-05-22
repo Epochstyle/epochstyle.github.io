@@ -27,78 +27,66 @@
     width: 66%;
     height: 900px;
 }
-
+*/
 .clearfix:after {
     visibility: hidden;
     display: block;
     font-size: 0;
     content: " ";
     clear: both;
-}*/
+}
 
 /* reformatting after unit 6*/
 
 /*Navigation Bar*/
-
- .nav ul {
-    list-style: none;
-    background-color: #f0f0f5;
-    text-align: right;
-    margin: 0.2em;
-    height: .6em;
-    font-size: 3em;
- } 
-
-  .nav li {
-    display: inline-block;
-    margin-right: 3%;
-  }
-
-.nav a {
+nav {float:right;}
+nav a {
+    display:inline-block;
     text-decoration: none;
     color: #555;
     transition: .5s 
     background-color;
+    padding: 1em;
 }
  
-.nav a:hover {
+nav a:hover {
     color: #78d1c6;
 }
  
-.nav a.active {
+nav a.active {
     background-color: #fff;
     color: #444;
-}
-
-@media only screen (max-width: 790px) {
-  .nav li {
-    color: red;
-    line-height: 100px;
-    font-size: 60px;
-  }
 }
 
 
 /*Logo*/
 .logo {
     background-image: url("../images/epoch_logo_aqua.png");
-    background-size: 50%;
-    position: absolute;
-    left: 2%;
-    top: 2%;
-    padding: 15em;
+    background-size: contain;
     background-repeat:no-repeat;
+    padding: 4em;
+    float: left;
+    position:absolute;
+    left:1em;
+    top:1em;
+    transition: all 0.5s ease;
 }
 
-.logo:hover {
+
+nav a:nth-of-type(1):hover ~ .logo {
     background-image: url("../images/epoch_logo_sparkle.png");
-
+}
+nav a:nth-of-type(2):hover ~ .logo {
     background-image: url("../images/epoch_logo_sunset.png");
+}
+nav a:nth-of-type(3):hover ~ .logo {
     background-image: url("../images/epoch_logo_leaves.png");
+}
+nav a:nth-of-type(4):hover ~ .logo {
         background-image: url("../images/epoch_logo_water.png");
-
+}
+.logo:hover {
     background-image: url("../images/epoch_logo_color.png");
-    transition: all 0.5s ease;
 }
 
 /*Trying to have multiple pictures displayed when hovering over the logo*/
@@ -124,13 +112,10 @@ h1 {
 /*Tag Line*/
 h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 110px;
+    font-size: 60px;
     font-weight: 300;
-    padding: 2%;
-    padding-left: 4em;
-    padding-right: 4em;
-    margin: 2em;
-    position: auto;
+    padding: 2% 4em;
+    margin: 2em 0;
 }
 
 /*Page facts*/
@@ -152,10 +137,9 @@ header {
 
 p{
     display: block;
-    margin: 1em;
+    /* margin: 1em; */
     font-family: 'Raleway', sans-serif
-    border-style: hidden; 
-    border-width: 20em;
+    border-style: hidden;
     font-size: 3em;
     line-height: 110%;
     margin-top: 1em;
@@ -165,7 +149,6 @@ p{
 /*Semantics*/
 header {
     background-color: #f0f0f5;
-    border: hidden;
     padding: 2%;
 }
 
@@ -188,7 +171,6 @@ body {
     background:  #f0f0f5;
     border: hidden;
     color: #555;
-    text-align: center;
     font-size: 22px;
     font-family: 'Open Sans',Arial,sans-serif;
 }   
@@ -196,25 +178,30 @@ body {
 
 /*Picture formating*/
 div.gallery {
-    display: inline-block;
     position: relative;
+    width: 32.33%;
+    float: left;
+    margin: .5%;
 }
 
 div.gallery img {
-    width: 1200px;
-    height: 1000px;
+    width: 100%;
+    height: initial;
 }
-
+.desc {
+  background: rgba(128, 0, 128, 0);
+  position:absolute;
+  color: rgba(85, 85, 85, 0);
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
 /*Gallery - Text Formatting*/
-div.desc {
+.desc p {
     position: absolute;
     font-family: 'Raleway', sans-serif;
-    padding: 15%;   
-    font-size: 5em;
-    opacity: 0; 
-    text-align: block;
-    background-color: transparent;
-    color: #555;
+    font-size: 2em;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -223,18 +210,9 @@ div.desc {
 
 /*Galery - Hover effect*/
 .gallery:hover .desc{
-    opacity: 1;
-    position: center;
-    transition-duration: 0.5s; 
-    transition-property: all;
+    background:rgba(128, 0, 128, 1);
+    color: rgba(85, 85, 85, 1);
 }
-
-.gallery img:hover {
-    opacity: 0.1;
-    transition-duration: 0.5s; 
-    backface-visibility: hidden;
-}
-
 /*Boats - abot phone - first photo in Parallax effect*/
 #about_text {
     float: left;
